@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+// import {Repably} from "../../../assets/repably.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import "../HomeComponents/Styles/Landing.css";
+import "../Styles/Landing.css";
 
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
@@ -23,14 +23,14 @@ export default function Landing() {
         //   clickable: true,
         // }}
         autoplay={{
-            delay: 1000,
+            delay: 1500,
             disableOnInteraction: false
             }}
         modules={[EffectFade, Navigation, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src="https://www.dropbox.com/s/w9k27an1dsyry59/final_repaybly_front_page.jpg?dl=1" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
