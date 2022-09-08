@@ -15,33 +15,37 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 export default function Landing() {
   return (
     <>
-      <Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        navigation={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        autoplay={{
+
+      <div className="h-screen relative w-full grid place-items-center">
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          autoplay={{
             delay: 2000,
             disableOnInteraction: false
-            }}
-        modules={[EffectFade, Navigation, Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://www.dropbox.com/s/w9k27an1dsyry59/final_repaybly_front_page.jpg?dl=1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-      </Swiper>
+          }}
+          modules={[EffectFade, Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src="https://www.dropbox.com/s/w9k27an1dsyry59/final_repaybly_front_page.jpg?dl=1" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
     </>
   );
 }
