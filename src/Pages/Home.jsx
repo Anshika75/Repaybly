@@ -1,5 +1,6 @@
 import React from 'react'
 import Category from '../Components/HomeComponents/Sections/Category'
+import Footer from '../Components/HomeComponents/Sections/Footer'
 import Landing from '../Components/HomeComponents/Sections/Landing'
 import Product from '../Components/HomeComponents/Sections/Product'
 import Slider2 from '../Components/HomeComponents/Sections/Slder2'
@@ -13,6 +14,7 @@ export default function Home() {
         <Slider2/>
         <Product/>
         <Testimonial/>
+        <Footer/>
     </>
   )
 }
