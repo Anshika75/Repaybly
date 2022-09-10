@@ -8,7 +8,7 @@ export default function Product() {
             <ProductNavbar/>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="flex justify-evenly flex-wrap -m-4">
+                    <div className="flex justify-center flex-wrap -m-4">
                         <MainProducCard/>
                         <MainProducCard/>
                         <MainProducCard/>
