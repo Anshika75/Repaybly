@@ -5,6 +5,7 @@ import CategoryCard from './Components/HomeComponents/Common components/Category
 import ProductCard from './Components/HomeComponents/Common components/ProductCard'
 import Login from './Pages/Login'
 import SignUp from './Pages/SignUp'
+import Product from './Pages/Product'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <>
       {/* <Home/> */}
       {/* <Login/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
+      <Product/>
       {/* <CategoryCard/>
       <ProductCard/> */}
     </>

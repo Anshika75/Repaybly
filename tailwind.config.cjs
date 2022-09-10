@@ -14,10 +14,15 @@ module.exports = {
         maroonDark: "#a91340",
         greenDark: "#00dab2",
         green: "#56ecbf",
+        blue: "#0072ff",
+        orange: "#ff512f",
+        green: "#38ef7d",
+        purple: "#e100ff",
       },
     },
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
+    require('daisyui'),
   ],
 }
