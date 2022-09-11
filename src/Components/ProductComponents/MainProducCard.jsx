@@ -3,7 +3,7 @@ import React from 'react'
 export default function MainProducCard() {
   return (
     <>
-        <div class="md:w-[21%] p-4 mx-3  my-7 h-full bg-white shadow rounded">
+        <div class="md:w-[21%] w-[300px] p-4 mx-3  my-7 h-full bg-white shadow rounded">
                             <div
                                 className="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
                                 style={{backgroundImage:"url('https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"}}
