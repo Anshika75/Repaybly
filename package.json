@@ -9,15 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "daisyui": "^2.27.0",
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-simple-star-rating": "^4.0.5",
-    "swiper": "^8.3.2",
-    "tw-elements": "^1.0.0-alpha12"
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
+    "daisyui": "^2.27.0",
+    "tw-elements": "^1.0.0-alpha12",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",

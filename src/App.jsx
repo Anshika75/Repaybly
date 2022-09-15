@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       {/* <Home /> */}
-      {/* <Login /> */}
+      <Login />
       {/* <SignUp /> */}
-      <Product />
+      {/* <Product /> */}
       {/* <CategoryCard /> */}
       {/* <ProductCard /> */}
     </>
