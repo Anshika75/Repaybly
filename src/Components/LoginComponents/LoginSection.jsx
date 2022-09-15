@@ -1,13 +1,24 @@
 import React from "react";
 import { useState } from "react";
 import { useGetValue } from "../../Store";
-
+import axios from "axios";
+import instance from "../../axios.js";
+import getError from "../../errorReport";
 export default function LoginSection() {
-  const [mail, setMail] = useState("");
-  const [pass, setPass] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
   const [state, dispatch] = useGetValue();
-  const submitHandler = () => {
-    dispatch({ type: "save" });
+  const submitHandler = async () => {
+    try {
+      const { data } = await instance.post("user/signin/", {
+        email: email,
+        pass: password,
+      });
+      dispatch({ type: "save", payload: data });
+      localStorage.setItem("userInfo", JSON.stringify(data));
+    } catch (e) {
+      console.log(getError(e));
+    }
   };
   return (
     <>
@@ -30,9 +41,9 @@ export default function LoginSection() {
                         <div className="mb-4">
                           <input
                             type="text"
-                            value={mail}
+                            value={email}
                             onChange={(e) => {
-                              setMail(e.target.value);
+                              setEmail(e.target.value);
                             }}
                             className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-maroonDark hover:border-maroonDark focus:outline-none"
                             placeholder="Username"
@@ -41,7 +52,7 @@ export default function LoginSection() {
                         <div className="mb-4">
                           <input
                             type="password"
-                            value={pass}
+                            value={password}
                             onChange={(e) => {
                               setPass(e.target.value);
                             }}
