@@ -1,6 +1,12 @@
 const getError = (error) => {
-  return error.response && error.response.data.message
-    ? error.response.data.message
-    : error.message;
+  let message;
+  try {
+    error.response && error.response.data.message
+      ? (message = error.response.data.message)
+      : (message = error.message);
+  } catch (e) {
+    message = error.message;
+  }
+  return message;
 };
 export default getError;

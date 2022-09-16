@@ -6,13 +6,15 @@ import ProductCard from "./Components/HomeComponents/Common components/ProductCa
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Product from "./Pages/Product";
-
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Login />
-      {/* <SignUp /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
       {/* <Product /> */}
       {/* <CategoryCard /> */}
       {/* <ProductCard /> */}
