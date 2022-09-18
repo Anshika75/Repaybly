@@ -1,5 +1,6 @@
 {
   "name": "repaybly",
+  "proxy": "http://localhost:3000/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
     "react-simple-star-rating": "^4.0.5",
+    "react-spinners": "^0.13.4",
+    "react-toastify": "^9.0.8",
     "swiper": "^8.3.2"
   },
   "devDependencies": {

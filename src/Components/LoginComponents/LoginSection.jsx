@@ -1,18 +1,45 @@
 import React from "react";
 import { useState } from "react";
 import { useGetValue } from "../../Store";
-
+import instance from "../../axios.js";
+import getError from "../../errorReport";
+import { Link, useNavigate } from "react-router-dom";
+import Loader from "../Loader";
 export default function LoginSection() {
-  const [mail, setMail] = useState("");
-  const [pass, setPass] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
   const [state, dispatch] = useGetValue();
-  const submitHandler = () => {
-    dispatch({ type: "save" });
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const submitHandler = async () => {
+    setLoading(true);
+    try {
+      const { data } = await instance.post("user/signin/", {
+        email: email,
+        pass: password,
+      });
+      dispatch({ type: "LOG_IN", payload: data });
+      localStorage.setItem("userInfo", JSON.stringify(data));
+      setLoading(false);
+      console.log(state);
+      navigate("/");
+    } catch (e) {
+      setLoading(false);
+      console.log(getError(e));
+    }
   };
   return (
     <>
+      {/* <ToastContainer position="bottom-center" limit={1} /> */}
+      {/* baad me bnaunga ye abhi kuch samajh nhi aa rha */}
+      {loading ? <Loader /> : null}
+      <section
+        className={` ${
+          loading ? " pointer-events-none " : " "
+        } h-full gradient-form bg-gray-200 font-Raleway`}
+      ></section>
       <section className="h-full gradient-form bg-gray-200 font-Raleway">
-        <div className="container py-5 px-5 h-full">
+        <div className="container mx-auto py-5 px-5 h-full">
           <div className="flex justify-center items-center flex-wrap text-gray-800">
             <div className="xl:w-[75%]">
               <div className="block bg-white shadow-lg rounded-lg">
@@ -30,9 +57,9 @@ export default function LoginSection() {
                         <div className="mb-4">
                           <input
                             type="text"
-                            value={mail}
+                            value={email}
                             onChange={(e) => {
-                              setMail(e.target.value);
+                              setEmail(e.target.value);
                             }}
                             className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-maroonDark hover:border-maroonDark focus:outline-none"
                             placeholder="Username"
@@ -41,7 +68,7 @@ export default function LoginSection() {
                         <div className="mb-4">
                           <input
                             type="password"
-                            value={pass}
+                            value={password}
                             onChange={(e) => {
                               setPass(e.target.value);
                             }}
@@ -72,12 +99,13 @@ export default function LoginSection() {
                             type="button"
                             className="inline-block px-6 py-2 border-2 hover:border-maroonDark text-maroon border-maroon hover:text-maroonDark font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                           >
-                            Sign up
+                            <Link to="/signup">Sign up</Link>
                           </button>
                         </div>
                       </form>
                     </div>
                   </div>
+
                   <div
                     className="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none"
                     style={{
