@@ -1,5 +1,5 @@
 import React from 'react'
-import StarRating from './StarRating'
+// import StarRating from '../HomeComponents/Common components/StarRating'
 
 export default function ProductCard(props) {
     return (

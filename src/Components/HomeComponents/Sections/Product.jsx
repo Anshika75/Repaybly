@@ -1,5 +1,4 @@
 import React from 'react'
-import ProductCard from '../Common components/ProductCard'
 import Heading from '../Common components/Heading'
 import ProductCardHolder from '../Uncommon Components/ProductCardHolder'
 
