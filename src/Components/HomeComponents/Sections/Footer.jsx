@@ -23,7 +23,7 @@ export default function Footer(){
               className="inline-flex items-center"
             >
               <svg
-                className="w-8 text-green font-Raleway uppercase"
+                className="w-8 text-[#56ecbf] font-Raleway uppercase"
                 viewBox="0 0 24 24"
                 strokeLinejoin="round"
                 strokeWidth="2"
@@ -37,25 +37,25 @@ export default function Footer(){
                 <rect x="14" y="1" width="7" height="6" />
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide text-green uppercase">
+              <span className="ml-2 text-xl font-bold tracking-wide text-[#56ecbf] uppercase">
                 Company
               </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-[#D3CCE3] font-Raleway">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                On an average, you will get bored from most of your Products. Right?
+                Or they may not be of not that much use. 
               </p>
               <p className="mt-4 text-sm text-[#D3CCE3] font-Raleway">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+                We will not talk about our products which are of use, we will keep our bro code and help you! <br/>
+                Just Don't Buy when you can Rent.
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
-              <p className="font-semibold tracking-wide text-green font-Raleway uppercase">
-                Category
+              <p className="font-semibold tracking-wide text-[#56ecbf] font-Raleway uppercase">
+                Quick Links
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -63,7 +63,7 @@ export default function Footer(){
                     href="/"
                     className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
                   >
-                    News
+                    Home
                   </a>
                 </li>
                 <li>
@@ -71,10 +71,104 @@ export default function Footer(){
                     href="/"
                     className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
                   >
-                    World
+                    Categories
                   </a>
                 </li>
                 <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    About Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold tracking-wide text-[#56ecbf] font-Raleway uppercase">
+                Work with Us
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Business
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Developer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Campus Ambassador
+                  </a>
+                </li>
+                {/* <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Nonprofit
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Educational
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    Projects
+                  </a>
+                </li> */}
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold tracking-wide text-[#56ecbf] font-Raleway uppercase">
+                Contact Us
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    &#9742; +1 (123) 456 7890
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
+                  >
+                    &#9993; abcd@gmail.com
+                  </a>
+                </li>
+                {/* <li>
                   <a
                     href="/"
                     className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
@@ -89,12 +183,12 @@ export default function Footer(){
                   >
                     References
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-green font-Raleway uppercase">
-                Cherry
+              <p className="font-semibold tracking-wide text-[#56ecbf] font-Raleway uppercase">
+                Suggestion
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -102,10 +196,10 @@ export default function Footer(){
                     href="/"
                     className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
                   >
-                    Web
+                    Post a Suggestion
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="/"
                     className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
@@ -136,93 +230,7 @@ export default function Footer(){
                   >
                     Portfolio
                   </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-green font-Raleway uppercase">
-                Apples
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Media
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Brochure
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Nonprofit
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Educational
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Projects
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-green font-Raleway uppercase">
-                Business
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Infopreneur
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Personal
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Wiki
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors text-sm duration-300 text-[#D3CCE3] font-Raleway hover:text-[#fff]"
-                  >
-                    Forum
-                  </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -256,6 +264,14 @@ export default function Footer(){
               <svg viewBox="0 0 24 24" fill="#56ecbf" className="h-5">
                 <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
               </svg>
+            </a>
+            <a
+              href="/"
+              className="transition-colors text-sm duration-300 text-deep-purple-100 hover:text-[#fff]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#56ecbf"><path d="M51.6,143.33333h-28.66667v-86h28.66667zM37.2724,45.86667c-7.9292,0 -14.33907,-6.42707 -14.33907,-14.33907c0,-7.912 6.42133,-14.3276 14.33907,-14.3276c7.90053,0 14.3276,6.42707 14.3276,14.3276c0,7.912 -6.42707,14.33907 -14.3276,14.33907zM154.8,143.33333h-27.56013v-41.85333c0,-9.98173 -0.1892,-22.81867 -14.3276,-22.81867c-14.35053,0 -16.55787,10.8704 -16.55787,22.09627v42.57573h-27.5544v-86.06307h26.4536v11.75907h0.37267c3.6808,-6.76533 12.6764,-13.8976 26.0924,-13.8976c27.92133,0 33.08133,17.82493 33.08133,40.99907z"></path></g></g></svg>
             </a>
           </div>
         </div>
