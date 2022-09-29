@@ -57,7 +57,7 @@ const ProfileDropDown = (props) => {
   );
 };
 
-export default function Header() {
+export default function MainHeader() {
   const [menuState, setMenuState] = useState(false);
 
   // Replace "" path with your path
