@@ -1,5 +1,6 @@
 {
   "name": "repaybly",
+  "proxy": "http://localhost:3000/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
     "react-simple-star-rating": "^4.0.5",
+    "react-spinners": "^0.13.4",
+    "react-toastify": "^9.0.8",
+    "react-transition-group": "^4.4.5",
     "swiper": "^8.3.2"
   },
   "devDependencies": {
@@ -20,8 +26,10 @@
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
     "autoprefixer": "^10.4.8",
+    "daisyui": "^2.27.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
+    "tw-elements": "^1.0.0-alpha12",
     "vite": "^3.0.7"
   }
 }
