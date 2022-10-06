@@ -10,6 +10,7 @@ import Product from "./Pages/Product";
 import DeliveryCardHolder from "./Components/DeliveryComponents/DeliveryCardHolder";
 import Deliver from "./Pages/Deliver";
 import OrderSummary from "./Pages/OrderSummary";
+import ProductDetail from "./Pages/ProductDetail";
 function App() {
   return (
     <>
@@ -19,7 +20,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
       </Routes> */}
       {/* <Deliver/> */}
-      <OrderSummary/>
+      {/* <OrderSummary/> */}
+      <ProductDetail/>
       {/* <DeliveryCardHolder/> */}
       {/* <Product /> */}
       {/* <CategoryCard /> */}
