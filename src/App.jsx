@@ -6,11 +6,10 @@ import ProductCard from "./Components/HomeComponents/Common components/ProductCa
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Product from "./Pages/Product";
-// import { Route, Routes } from "react-router-dom";
-import DeliveryCardHolder from "./Components/DeliveryComponents/DeliveryCardHolder";
-import Deliver from "./Pages/Deliver";
-import OrderSummary from "./Pages/OrderSummary";
 import ProductDetail from "./Pages/ProductDetail";
+import OrderSummary from "./Pages/OrderSummary";
+import { Route, Routes } from "react-router-dom";
+import CheckOut from "./Pages/CheckOut";
 function App() {
   return (
     <>
@@ -19,13 +18,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes> */}
-      {/* <Deliver/> */}
-      {/* <OrderSummary/> */}
-      <ProductDetail/>
-      {/* <DeliveryCardHolder/> */}
+      {/* <Home/> */}
       {/* <Product /> */}
       {/* <CategoryCard /> */}
       {/* <ProductCard /> */}
+      {/* <ProductDetail/> */}
+      {/* <OrderSummary/> */}
+      <CheckOut/>
     </>
   );
 }
