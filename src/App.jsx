@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import Home from "./Pages/Home";
+
+import Deliver from "./Pages/Deliver";
 import CategoryCard from "./Components/HomeComponents/Common components/CategoryCard";
 import ProductCard from "./Components/HomeComponents/Common components/ProductCard";
 import Login from "./Pages/Login";
@@ -10,6 +12,7 @@ import ProductDetail from "./Pages/ProductDetail";
 import OrderSummary from "./Pages/OrderSummary";
 import { Route, Routes } from "react-router-dom";
 import CheckOut from "./Pages/CheckOut";
+import CheckOutForm from "./Pages/CheckOutForm";
 function App() {
   return (
     <>
@@ -24,7 +27,9 @@ function App() {
       {/* <ProductCard /> */}
       {/* <ProductDetail/> */}
       {/* <OrderSummary/> */}
-      <CheckOut/>
+      {/* <CheckOut/> */}
+      {/* <Deliver/> */}
+      <CheckOutForm/>
     </>
   );
 }
